@@ -8,13 +8,13 @@
 #include <locale.h>
 #include <unistd.h> 
 
-//
+
 #include "sql_interaction.h"
 #include "log_writing.h"
 
 #include <signal.h>
 
-
+//больше так не делать.
 
 #define PORT 2154
 #define MSG_SIZE 10000
