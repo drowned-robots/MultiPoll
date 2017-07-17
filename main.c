@@ -177,7 +177,7 @@ int communicate(int fd)
 void signal_handler(int sig)
 {
 	if(sig==SIGINT) {   
-		printf("\nSIGINT\n");
+		printf("\nSIGINT handler\n");
 		iferr("SIGINT", LOG_CRIT);      
 	}
 }
