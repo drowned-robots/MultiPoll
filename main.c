@@ -120,8 +120,7 @@ int main(int argc, char * argv[])
 										iferr("query is sent\n", LOG_INFO);
 								}
 								free(tosql); 
-							}
-							//
+							}							
 							clients[k].fd = clients[cur_clientcount-1].fd;
 							strcpy(clients[k].msg, clients[cur_clientcount-1].msg);
 							cur_clientcount--;
@@ -173,6 +172,7 @@ int communicate(int fd)
 	}
 	return -1;
 }
+
 
 void signal_handler(int sig)
 {
